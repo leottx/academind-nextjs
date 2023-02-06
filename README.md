@@ -9,7 +9,8 @@ File-based Routing, Page Pre-rendering, Data Fetching, Image Optimization, Font 
 
 - [x] [Módulo 01 - Getting Started](https://github.com/leottx/academind-nextjs/tree/main/01-module)
 - [ ] Módulo 02 - Optional: React Refresher
-- [ ] Módulo 03 - Pages & File-based Routing
+  - Esse módulo foi pulado, pois já possuo experiência com ReactJS.
+- [x] [Módulo 03 - Pages & File-based Routing](https://github.com/leottx/academind-nextjs/tree/main/03-module)
 - [ ] Módulo 04 - Project Time: Working witch File-base Routing
 - [ ] Módulo 05 - Page Pre-rendering & Data Fetching
 - [ ] Módulo 06 - Project Time: Page Pre-rendering & Data Fetching
