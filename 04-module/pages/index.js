@@ -1,12 +1,15 @@
 // Components
-import Header from "../components/header/header";
 import EventList from "../components/events/event-list";
 
+// Utils
+import { getAllFeaturedEvents } from "../data/";
+
 export default function HomePage() {
+  const events = getAllFeaturedEvents();
+
   return (
     <div>
-      <Header />
-      <EventList />
+      <EventList events={events} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { events } from "../../data";
+import { getAllEvents } from "../../data";
 
 // Hooks
 import { useRouter } from "next/router";
@@ -9,6 +9,7 @@ import EventLogistics from "../../components/event-detail/event-logistics";
 import EventContent from "../../components/event-detail/event-content";
 
 export default function EventDetailsPage() {
+  const events = getAllEvents();
   const { query } = useRouter();
   const eventId = query.eventId;
   const event = getEventById();

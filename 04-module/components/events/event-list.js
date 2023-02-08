@@ -1,11 +1,12 @@
-import { events } from "../../data";
-
 // Components
 import EventCard from "./event-card";
 
-export default function EventList() {
+// Styles
+import classes from "./event-list.module.css";
+
+export default function EventList({ events }) {
   return (
-    <ul>
+    <ul className={classes.list}>
       {events.map((event) => (
         <EventCard key={event.id} event={event} />
       ))}

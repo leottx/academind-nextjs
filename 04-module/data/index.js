@@ -1,32 +1,4 @@
-// function randomDate(start, end) {
-//   return new Date(
-//     start.getTime() + Math.random() * (end.getTime() - start.getTime())
-//   );
-// }
-
-// function getNumberBetweenRange(start, end) {
-//   return Math.floor(Math.random() * (end - start + 1)) + start;
-// }
-
-// function getListOfEvents(numberOfEvents) {
-//   const events = [];
-//   for (let i = 0; i < numberOfEvents; i++) {
-//     events.push({
-//       title: `Event ${i}`,
-//       date: randomDate(
-//         new Date(),
-//         new Date(getNumberBetweenRange(2023, 2030), 0, 1)
-//       ),
-//       address: `address ${i}`,
-//       isFeatured: Math.random() < 0.5,
-//     });
-//   }
-//   return events;
-// }
-
-// const events = getListOfEvents(8);
-
-export const events = [
+const events = [
   {
     id: 0,
     title: "Event 0",
@@ -100,3 +72,11 @@ export const events = [
     isFeatured: false,
   },
 ];
+
+export function getAllEvents() {
+  return events;
+}
+
+export function getAllFeaturedEvents() {
+  return events.filter((event) => event.isFeatured);
+}
